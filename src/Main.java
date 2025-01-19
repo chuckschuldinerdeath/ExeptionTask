@@ -7,12 +7,12 @@ public class Main {
 
     private static long calculateSumElements(String[][] input) {
         if (input.length != 4) {
-            throw new AppArraySizeException("");
+            throw new AppArraySizeException("Передан массив неверного размера");
         }
 
         for (String[] strings : input) {
             if (strings.length != 4) {
-                throw new AppArraySizeException("");
+                throw new AppArraySizeException("Передан массив неверного размера");
             }
         }
         long result = 0;
